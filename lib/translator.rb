@@ -16,7 +16,7 @@ def load_library(file)
   new_hash[get_emoticon] = getemoticon
   # new_hash = {get_meaning=> {jap_emot => meaning, jap_emot => meaning},
   #             get_emoticon => {english_emot => jap_emot, english_emot => jap_emot}}
-  
+
   return new_hash
 end
 
