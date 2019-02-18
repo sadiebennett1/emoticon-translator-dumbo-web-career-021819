@@ -24,7 +24,7 @@ def get_japanese_emoticon(file, emoticon)
   # code goes here
   hash = load_library(file)
   hash.each do |get, hashy|
-    if get == "get_emoticon" #&& hashy.values.include?(emoticon)
+    if get == "get_emoticon"
       hashy.each do |english, japanese|
         if english == emoticon
           return japanese
@@ -35,6 +35,17 @@ def get_japanese_emoticon(file, emoticon)
   return "Sorry, that emoticon was not found"
 end
 
-def get_english_meaning
+def get_english_meaning(file, emoticon)
   # code goes here
+  hash = load_library(file)
+  hash.each do |get, hashy|
+    if get == "get_meaning"
+      hashy.each do |emoticonz, meaning|
+        if emoticonz == emoticon
+          return meaning 
+        end
+      end
+    end
+  end
+  return "Sorry, that emoticon was not found"
 end
