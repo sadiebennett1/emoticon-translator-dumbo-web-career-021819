@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library(/lib/emoticons.yml)
   # code goes here
-  hash = YAML.load_file('./lib/emoticons.yml')
+  hash = YAML.load_file('/lib/emoticons.yml')
   # hash = {angel: ["O:)", "☜(⌒▽⌒)☞"], angry: [">:(", "ヽ(ｏ`皿′ｏ)ﾉ"]
   getmeaning = {}
   getemoticon = {}
